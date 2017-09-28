@@ -1,0 +1,8 @@
+.page-header {
+  background: url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+  outline: 6px solid red;
+
+  .page-header__logo {
+    background-color: $color-main;
+  }
+}

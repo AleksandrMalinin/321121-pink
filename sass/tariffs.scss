@@ -1,0 +1,42 @@
+.tariffs {
+  background-color: $color-gray;
+  text-transform: uppercase;
+  padding-top: 1px;
+  margin: 5px;
+  outline: 4px solid green;
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: $color-secondary;
+  }
+
+  &__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__price {
+    font-weight: 300;
+    color: $color-secondary;
+  }
+
+  &__row--hit {
+    background-color: $color-main;
+  }
+
+  &__features {
+    text-align: left;
+  }
+
+  &__row--check,
+  &__row--cross {
+    background-color: $color-secondary;
+  }
+
+}
