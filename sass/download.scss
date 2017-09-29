@@ -1,0 +1,25 @@
+.download {
+  margin: 5px;
+  color: $color-secondary;
+  background-color: $color-sixth;
+  outline: 5px solid yellow;
+
+  &__button {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: $color-secondary;
+  }
+
+  &__list {
+    font-size: 0;
+  }
+
+  &__link {
+    color: $color-secondary;
+  }
+
+  &__for-devices {
+    font-weight: 300;
+  }
+}

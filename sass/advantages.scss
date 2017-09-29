@@ -1,0 +1,26 @@
+.advantages {
+  margin: 5px;
+  padding-top: 1px;
+  outline: 4px solid green;
+
+  &__advertising {
+    background-color: $color-secondary;
+  }
+
+  &__wrapper {
+    background-color: $color-gray;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    color: $color-main;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-third;
+  }
+}
