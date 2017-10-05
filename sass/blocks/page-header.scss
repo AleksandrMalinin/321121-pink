@@ -24,7 +24,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     .page-header__wrapper {
       &:last-child {
         display: flex;
@@ -38,7 +37,6 @@
       width: 620px;
       margin-left: auto;
       margin-right: auto;
-
     }
 
     .page-header__download {
@@ -88,6 +86,5 @@
       margin-right: auto;
       order: 1;
     }
-
   }
 }
