@@ -1,0 +1,23 @@
+.copyright {
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    .copyright__made-by {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .copyright__logo {
+      margin-left: 15px;
+      outline: 2px solid blue;
+    }
+
+    .copyright__made-by {
+      font-size: 18px;
+    }
+
+    .copyright__image {
+    }
+  }
+}

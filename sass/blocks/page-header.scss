@@ -1,0 +1,93 @@
+.page-header {
+  background: $color-main url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  outline: 6px solid red;
+
+  .page-header__wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+  }
+
+  .page-header__logo {
+    background-color: $color-main;
+  }
+
+  .page-header__toggle {
+    padding-right: 0;
+    background: none;
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    .page-header__wrapper {
+      &:last-child {
+        display: flex;
+        min-height: 620px;
+        outline: 3px solid red;
+        background: url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat;
+      }
+    }
+
+    .page-header__wrapper-inner {
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .page-header__download {
+      width: 310px;
+      margin-left: auto;
+      margin-right: 0;
+      background: transparent;
+    }
+
+    .page-header__intro {
+      width: 310px;
+      margin-left: 0;
+      margin-right: auto;
+      order: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 3px solid red;
+      background: url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat;
+
+      &:last-child {
+        min-height: 743px;
+      }
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
+
+    .page-header__download {
+      width: 470px;
+      margin-left: auto;
+      margin-right: 0;
+      background: transparent;
+    }
+
+    .page-header__intro {
+      width: 470px;
+      margin-left: 0;
+      margin-right: auto;
+      order: 1;
+    }
+
+  }
+}

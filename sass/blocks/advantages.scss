@@ -1,0 +1,136 @@
+.advantages {
+  outline: 4px solid green;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    color: $color-main;
+  }
+
+  .advantages__head {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-third;
+  }
+
+  .advantages__advertising {
+    width: 320px;
+    min-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    outline: 2px solid blue;
+  }
+
+  .advantages__wrapper {
+    min-height: 755px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: url("../img/iphone-screen-mobile@1x.png") center bottom no-repeat;
+    background-color: $color-gray;
+  }
+
+  .advantages__list {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .advantages__advertising {
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+      outline: 2px solid blue;
+    }
+
+    .advantages__slogan-second-part {
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .advantages__wrapper {
+      width: 620px;
+      min-height: 485px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: url("../img/iphone-screen-mobile@1x.png") 20px bottom no-repeat;
+      background-color: $color-gray;
+      outline: 2px solid blue;
+    }
+
+    .advantages__list {
+      width: 310px;
+      margin-left: auto;
+      margin-right: 0;
+      text-align: left;
+    }
+
+    .advantages__description {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    h2 {
+      font-size: 50px;
+    }
+
+    .advantages__head {
+      font-size: 30px;
+    }
+
+    .advantages__description {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .advantages__list {
+      width: 960px;
+      display: flex;
+      justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto;
+
+      outline: 2px solid blue;
+    }
+
+    .advantages__item {
+      width: 320px;
+      text-align: center;
+      background: url("../img/iphone-screen-mobile@1x.png") 20px bottom no-repeat;
+      outline: 4px solid red;
+    }
+
+    .advantages__advertising {
+      width: 100%;
+      margin: 0;
+      outline: 2px solid blue;
+    }
+
+    .advantages__slogan-second-part {
+      width: 640px;
+    }
+
+    .advantages__wrapper {
+      width: 100%;
+      min-height: 460px;
+      background: none;
+      background-color: $color-gray;
+    }
+  }
+
+}
