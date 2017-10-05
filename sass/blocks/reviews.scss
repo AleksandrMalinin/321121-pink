@@ -46,9 +46,7 @@
 
   .reviews__radio {
     display: none;
-  }
 
-  .reviews__radio {
     &--first:checked ~ .reviews__toggles label[for="btn-1"],
     &--second:checked ~ .reviews__toggles label[for="btn-2"],
     &--third:checked ~ .reviews__toggles label[for="btn-3"] {
@@ -59,6 +57,7 @@
     &--first:checked ~ .reviews__wrapper-inner .reviews__list {
       transform: translate(0);
     }
+
     &--second:checked ~ .reviews__wrapper-inner .reviews__list {
       transform: translate(-280px);
     }
@@ -96,6 +95,7 @@
     }
 
     .reviews__text {
+      order: -1;
       font-size: 18px;
       line-height: 30px;
     }
@@ -121,6 +121,7 @@
       &--first:checked ~ .reviews__wrapper-inner .reviews__list {
         transform: translate(0);
       }
+
       &--second:checked ~ .reviews__wrapper-inner .reviews__list {
         transform: translate(-620px);
       }
@@ -128,10 +129,6 @@
       &--third:checked ~ .reviews__wrapper-inner .reviews__list {
         transform: translate(-1240px);
       }
-    }
-
-    .reviews__text {
-      order: -1;
     }
   }
 
@@ -150,7 +147,7 @@
     .reviews__research {
       display: block;
       width: 960px;
-      background-color: $color-gray
+      background-color: $color-gray;
     }
 
     .reviews__wrapper {

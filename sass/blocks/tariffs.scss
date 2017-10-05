@@ -25,9 +25,7 @@
 
   .tariffs__radio {
     display: none;
-  }
 
-  .tariffs__radio {
     &--first:checked ~ .tariffs__toggles label[for="btn-4"],
     &--second:checked ~ .tariffs__toggles label[for="btn-5"],
     &--third:checked ~ .tariffs__toggles label[for="btn-6"] {
@@ -38,6 +36,7 @@
     &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
       transform: translate(0);
     }
+
     &--second:checked ~ .tariffs__wrapper-inner .tariffs__table {
       transform: translate(-276px);
     }
@@ -61,7 +60,7 @@
 
   .tariffs__data {
     &--hit {
-    background-color: $color-main;
+      background-color: $color-main;
     }
 
     &--check,
