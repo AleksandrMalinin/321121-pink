@@ -9,16 +9,16 @@
   border-radius: 30px;
   background: transparent;
 
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+
   &--pink {
     margin-bottom: 12px;
     color: $color-fourth;
     border: 3px solid $color-fourth;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 183px;
-
-    &--pink {
+    @media (min-width: $desktop-width) {
       margin: 0;
     }
   }
