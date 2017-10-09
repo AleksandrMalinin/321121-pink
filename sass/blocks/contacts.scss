@@ -3,74 +3,77 @@
   background-color: $color-secondary;
   text-align: center;
   outline: 6px solid red;
+}
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    color: $color-main;
-  }
-
-  h4 {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1;
-  }
-
-  p {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    color: $color-fourth;
-  }
-
-  .contacts__wrapper {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid blue;
-  }
+.contacts__question {
+  margin-top: 45px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: $color-main;
 
   @media (min-width: $tablet-width) {
-    h2 {
-      font-size: 40px;
-    }
+    font-size: 40px;
+  }
 
-    .contacts__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      width: 620px;
-    }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
 
-    .contacts__block {
-      width: 310px;
-      outline: 2px solid green;
+.contacts__question--second {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
 
-      &--address {
-        width: 100%;
-      }
+.contacts__head {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  color: $color-fourth;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid blue;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+}
+
+.contacts__block {
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    outline: 2px solid green;
+
+    &--address {
+      width: 100%;
     }
   }
 
   @media (min-width: $desktop-width) {
-    h2 {
-      font-size: 50px;
-    }
+    width: 300px;
 
-    .contacts__wrapper {
-      display: flex;
-      justify-content: space-around;
-      width: 960px;
-    }
-
-    .contacts__block {
-      width: 300px;
-
-      &--email {
-        order: 1;
-      }
+    &--email {
+      order: 1;
     }
   }
 }

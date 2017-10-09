@@ -3,74 +3,80 @@
   margin-left: auto;
   margin-right: auto;
   outline: 3px solid red;
+}
 
-  h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 30px;
-  }
-
-  .gallery__promo {
-    width: 245px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    outline: 3px solid red;
-  }
+.gallery__head {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    h6 {
-      font-size: 18px;
-    }
+    font-size: 18px;
+  }
+}
 
-    .gallery__promo {
-      width: 440px;
-    }
+.gallery__promo {
+  width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  outline: 3px solid red;
 
-    .gallery__post {
-      width: 300px;
-      outline: 1px solid black;
-    }
-
-    .gallery__post:nth-child(odd) {
-      margin-right: 20px;
-    }
-
-    .gallery__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      width: 620px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  @media (min-width: $tablet-width) {
+    width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    .gallery__promo {
-      width: 570px;
+    width: 570px;
+  }
+}
+
+.gallery__post {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    outline: 1px solid black;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    outline: 1px solid black;
+
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
     }
 
-    .gallery__wrapper {
-      width: 940px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .gallery__post {
-      width: 300px;
-    }
-
-    .gallery__post:nth-child(odd) {
+    @media (min-width: $desktop-width) {
       margin: 0;
     }
+  }
 
-    .gallery__post:nth-child(3n+2) {
+  &:nth-child(3n+2) {
+    @media (min-width: $desktop-width) {
       margin-left: 20px;
       margin-right: 20px;
       outline: 1px solid black;
     }
+  }
+}
+
+.gallery__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
