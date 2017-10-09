@@ -1,0 +1,20 @@
+.map {
+  position: relative;
+
+  .map__triangle {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    outline: 2px solid blue;
+  }
+
+  svg {
+    width: 320px;
+    height: 100%;
+  }
+
+  polygon {
+    fill: $color-secondary;
+  }
+}
