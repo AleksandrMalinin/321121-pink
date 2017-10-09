@@ -8,27 +8,6 @@
     margin-right: auto;
     text-align: left;
     outline: 2px solid blue;
-
-    .research__wrapper {
-      padding-top: 1px;
-    }
-
-    .research__head {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 30px;
-      line-height: 36px;
-    }
-
-    .research__paragraph {
-      font-size: 14px;
-      line-height: 24px;
-    }
-
-    .research__link {
-      color: $color-fourth;
-      text-decoration: underline;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,19 +15,50 @@
     width: 100%;
     background-color: $color-gray;
   }
+}
 
-  .research__wrapper {
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  .research__paragraph {
+.research__head {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.research__paragraph {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
   }
+}
 
-  .research__link {
+.research__link {
+  @media (min-width: $tablet-width) {
+    color: $color-fourth;
+    text-decoration: underline;
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
   }
