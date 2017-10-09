@@ -2,120 +2,266 @@
   background-color: $color-gray;
   text-transform: uppercase;
   padding-top: 1px;
+  padding-bottom: 1px;
   outline: 4px solid green;
+}
 
-  .tariffs__wrapper {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+.tariffs__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
   }
 
-  .tariffs__wrapper-inner {
-    padding-left: 20px;
-    overflow: hidden;
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.tariffs__wrapper-inner {
+  padding-left: 20px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    overflow: auto;
+    width: 620px;
   }
 
-  .tariffs__table {
-    width: 828px;
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    overflow: auto;
+    width: 940px;
+  }
+}
+
+.tariffs__table {
+  width: 828px;
+  margin-top: 65px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
   }
 
-  .tariffs__row {
-    width: 276px;
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 
-  .tariffs__radio {
-    display: none;
+}
 
-    &--first:checked ~ .tariffs__toggles label[for="btn-4"],
-    &--second:checked ~ .tariffs__toggles label[for="btn-5"],
-    &--third:checked ~ .tariffs__toggles label[for="btn-6"] {
-      border: 3px solid $color-main;
-      background-color: $color-secondary;
+.tariffs__row {
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.tariffs__radio {
+  display: none;
+
+  &--first:checked ~ .tariffs__toggles label[for="btn-4"],
+  &--second:checked ~ .tariffs__toggles label[for="btn-5"],
+  &--third:checked ~ .tariffs__toggles label[for="btn-6"] {
+    border: 3px solid $color-main;
+    background-color: $color-secondary;
+  }
+
+  &--first:hover:not(:checked) ~ .tariffs__toggles label[for="btn-4"],
+  &--second:hover:not(:checked) ~ .tariffs__toggles label[for="btn-5"],
+  &--third:hover:not(:checked) ~ .tariffs__toggles label[for="btn-6"] {
+    background-color: transparentize($color-main, 0.4);
+  }
+
+  &--first:active:not(:checked) ~ .tariffs__toggles label[for="btn-4"],
+  &--second:active:not(:checked) ~ .tariffs__toggles label[for="btn-5"],
+  &--third:active:not(:checked) ~ .tariffs__toggles label[for="btn-6"] {
+    background-color: transparentize($color-main, 0.9);
+  }
+
+  &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
+    transform: translate(0);
+    transition: 0.5s;
+
+    @media (min-width: $tablet-width) {
+      transform: none;
     }
+  }
 
-    &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
-      transform: translate(0);
-    }
+  &--second:checked ~ .tariffs__wrapper-inner .tariffs__table {
+    transform: translate(-276px);
+    transition: 0.5s;
 
-    &--second:checked ~ .tariffs__wrapper-inner .tariffs__table {
-      transform: translate(-276px);
-    }
-
-    &--third:checked ~ .tariffs__wrapper-inner .tariffs__table {
-      transform: translate(-552px);
+    @media (min-width: $tablet-width) {
+      transform: none;
     }
   }
 
-  .tariffs__name {
+  &--third:checked ~ .tariffs__wrapper-inner .tariffs__table {
+    transform: translate(-552px);
+    transition: 0.5s;
+
+    @media (min-width: $tablet-width) {
+      transform: none;
+    }
+  }
+}
+
+.tariffs__name {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.tariffs__price {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
-    font-weight: bold;
     line-height: 30px;
     color: $color-secondary;
   }
 
-  .tariffs__price {
-    font-weight: 300;
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
     color: $color-secondary;
   }
+}
 
-  .tariffs__data {
-    &--hit {
-      background-color: $color-main;
-    }
-
-    &--check,
-    &--cross {
-      background-color: $color-secondary;
-    }
-  }
-
-  .tariffs__features {
-    text-align: left;
-  }
-
-  .tariffs__toggles {
-    padding-left: 14px;
-  }
-
-  .tariffs__toggle {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin-right: 15px;
-  }
-
+.tariffs__head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $color-main;
 
   @media (min-width: $tablet-width) {
-    .tariffs__name {
-      font-size: 16px;
+    padding: 10px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px;
+  }
+
+  &--empty {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      background-color: transparent;
+    }
+  }
+
+  &--hit {
+    background: $color-main url("../img/bg-hit.svg") 0 0 no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
     }
 
-    .tariffs__price {
-      font-size: 18px;
-      line-height: 30px;
-      color: $color-secondary;
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit.svg");
     }
 
-    .tariffs__features {
+  }
+}
+
+.tariffs__data {
+  &--check {
+    background-color: $color-secondary;
+
+    @media (min-width: $tablet-width) {
+      background: $color-secondary url("../img/.svg") 0 0 no-repeat;
+    }
+  }
+
+  &--cross {
+    background-color: $color-secondary;
+
+    @media (min-width: $tablet-width) {
+      background: $color-secondary url("../img/.svg") 0 0 no-repeat;
+    }
+  }
+
+
+  &--additional {
+    display: none;
+    background-color: $color-secondary;
+
+    @media (min-width: $tablet-width) {
+      display: block;
       font-size: 14px;
       line-height: 30px;
-      text-transform: none;
+    }
+  }
+}
+
+.tariffs__features {
+  padding: 0;
+  margin: 0;
+  padding: 15px 20px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 15px;
+    font-size: 0;
+    text-transform: none;
+
+    &--visible {
+      font-size: 14px;
+      line-height: 30px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    .tariffs__price {
-      font-size: 24px;
-      line-height: 30px;
-      color: $color-secondary;
-    }
+    padding: 14px 20px;
+    font-size: 0;
 
-    .tariffs__features {
+    &--visible {
       font-size: 18px;
       line-height: 30px;
-      text-transform: none;
     }
+  }
+}
+
+
+.tariffs__toggles {
+  margin-bottom: 40px;
+  padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tariffs__toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: transparentize($color-third, 0.7);
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
