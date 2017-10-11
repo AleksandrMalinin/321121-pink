@@ -1,9 +1,8 @@
 .intro {
   width: 280px;
-  min-height: 170px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1px;
+  padding-top: 30px;
   text-align: center;
   outline: 2px solid red;
 
@@ -11,12 +10,20 @@
     width: 620px;
     padding-top: 75px;
     background: none;
+  }
 
-    &--photo {
+  &--photo {
+    padding-bottom: 85px;
+
+    @media (min-width: $tablet-width) {
       padding-bottom: 140px;
     }
+  }
 
-    &--concours {
+  &--concours {
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
       padding-bottom: 75px;
     }
   }

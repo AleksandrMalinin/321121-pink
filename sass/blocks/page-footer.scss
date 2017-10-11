@@ -1,14 +1,11 @@
 .page-footer {
   width: 320px;
-  min-height: 90px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
   padding-bottom: 40px;
-  display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
     min-width: 660px;
     margin: 0;
     margin-left: auto;
@@ -20,6 +17,14 @@
     width: 940px;
     padding-top: 98px;
     padding-bottom: 72px;
+  }
+
+  &--invisible {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 
@@ -40,6 +45,8 @@
 }
 
 .page-footer__logo {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     width: 170px;
     margin-top: auto;
@@ -54,13 +61,20 @@
 }
 
 .page-footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 180px;
+  margin-bottom: 35px;
   outline: 2px solid blue;
-  @media (min-width: $desktop-width) {
-    width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 300px;
+    width: 180px;
   }
 }
 
@@ -71,7 +85,7 @@
   width: 140px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid blue;
+  outline: 2px solid green;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;

@@ -4,8 +4,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    width: 790px;
-    background-color: transparentize($color-third, 0.7);
+    width: 620px;
+    margin-right: auto;
+    outline: 2px solid red;
+    /*background-color: transparentize($color-third, 0.7);*/
   }
 }
 
@@ -27,7 +29,17 @@
   @media (min-width: $desktop-width) {
     font-weight: normal;
     text-transform: none;
-    outline: 3px solid red;
+    text-align: left;
     background-color: transparent;
+    box-shadow: none;
+    outline: 1px solid red;
+
+    &:nth-child(3) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
   }
 }

@@ -11,6 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 940px;
   }
 }
@@ -108,10 +110,10 @@ textarea {
     margin-bottom: 65px;
 
     &:first-of-type {
-      flex-direction: column;
       padding: 0;
       order: 0;
       border: none;
+      outline: 2px solid red;
     }
 
     &:nth-of-type(2) {
@@ -136,18 +138,33 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    outline: 2px solid violet;
 
-    &:nth-of-type(3) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      background-color: lightgreen;
+    &:first-of-type {
+      width: 435px;
+      margin-right: 70px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: pink;
     }
 
     &:nth-of-type(2) {
+      display: flex;
+      width: 940px;
       background-color: yellow;
     }
 
+    &:nth-of-type(3) {
+      width: 940px;
+      background-color: lightgreen;
+    }
+
+    &:nth-of-type(4) {
+      width: 435px;
+      padding-top: 40px;
+      padding-bottom: 25px;
+      background-color: lightblue;
+    }
   }
 
   &--gray {
@@ -182,15 +199,30 @@ textarea {
   }
 }
 
-.form__wrapper-inner {
+.form__contacts-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
   }
 
   @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
     width: 410px;
     background-color: blue;
+   }
+}
+
+.form__name-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 50px;
+    outline: 2px solid blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -204,6 +236,14 @@ textarea {
 
   }
 }
+/*
+.form__wrapper-achievement {
+  display: block;
+  min-height: 40px;
+  margin-bottom: 50px;
+  background-color: red;
+}
+*/
 
 .form__aria-label {
   line-height: 30px;
@@ -231,12 +271,16 @@ textarea {
   @media (min-width: $tablet-width) {
     &:first-child,
     &:nth-child(5) {
-      width: 95px;
     }
 
     &:nth-child(3) {
-      width: 55px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin: 0;
+    margin-right: 20px;
   }
 }
 
@@ -287,6 +331,18 @@ textarea {
   }
 }
 
+.form__input {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin: 0;
+  }
+}
+
 .form__checkbox-label,
 .form__radio-label,
 input[placeholder],
@@ -325,6 +381,7 @@ textarea[placeholder] {
 }
 
 .form__footnote {
+  display: block;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -341,7 +398,10 @@ textarea[placeholder] {
     order: 5;
     outline: 2px solid blue;
     min-height: 64px;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
