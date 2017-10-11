@@ -117,10 +117,14 @@
 }
 
 .page-header__wrap {
+  background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
+
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 620px;
-    background: url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat;
+    background:
+    url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") center -110px no-repeat;
   }
 
   @media (min-width: $desktop-width) {

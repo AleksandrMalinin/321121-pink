@@ -149,7 +149,6 @@ textarea {
     }
 
     &:nth-of-type(2) {
-      display: flex;
       width: 940px;
       background-color: yellow;
     }
@@ -199,6 +198,7 @@ textarea {
   }
 }
 
+/*
 .form__contacts-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -210,6 +210,29 @@ textarea {
     width: 410px;
     background-color: blue;
    }
+}*/
+
+.form__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form__number,
+.form__email {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+  }
 }
 
 .form__name-wrapper {
@@ -233,7 +256,16 @@ textarea {
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 375px;
+    margin: 0;
   }
 }
 /*
@@ -244,6 +276,15 @@ textarea {
   background-color: red;
 }
 */
+
+.form__achievement-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .form__aria-label {
   line-height: 30px;
@@ -284,11 +325,6 @@ textarea {
   }
 }
 
-.form__text {
-  @media (min-width: $desktop-width) {
-  }
-}
-
 .form__input,
 .form__text,
 .form__text-aria {
@@ -323,11 +359,20 @@ textarea {
     width: 820px;
   }
 
-
   &:active,
   &:focus {
     border-color: $color-fourth;
     outline: none;
+  }
+}
+
+.form__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
   }
 }
 
@@ -413,6 +458,12 @@ textarea[placeholder] {
   @media (min-width: $tablet-width) {
     margin-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    outline: 2px solid green;
+  }
+
 
   &::before {
     position: absolute;
