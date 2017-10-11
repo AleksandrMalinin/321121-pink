@@ -68,6 +68,7 @@
 
           <fieldset class="form__fieldset form__fieldset--gray">
             <legend class="form__legend form__legend--large">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__achievement-wrapper">
             <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
             <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
             <input class="form__checkbox visually-hidden" type="checkbox" name="burn" id="burn" checked>
@@ -80,17 +81,20 @@
             <label class="form__checkbox-label" for="tower">Удержал башню</label>
             <input class="form__checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
             <label class="form__checkbox-label" for="hotel">Разгромил отель</label>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--none">Контактная информация</legend>
             <div class="form__contacts-wrapper">
-              <label class="form__text-label">Номер телефона</label>
-              <input class="form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="form__contacts-wrapper">
-              <label class="form__text-label">Адрес почты</label>
-              <input class="form__text" type="email" name="email" placeholder="Введите почту *">
+              <label class="form__text-label">
+                <span class="form__number">Номер телефона</span>
+                <input class="form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="form__text-label">
+                <span class="form__email">Адрес почты</span>
+                <input class="form__text" type="email" name="email" placeholder="Введите почту *">
+              </label>
             </div>
           </fieldset>
 
