@@ -1,0 +1,190 @@
+.reviews {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: $color-secondary;
+  outline: 4px solid green;
+}
+
+.reviews__author {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-third;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.reviews__text {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.reviews__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  outline: 2px solid blue;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+.reviews__profession {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.reviews__wrapper-inner {
+  overflow: hidden;
+}
+
+.reviews__list {
+  display: flex;
+  width: 300%;
+  outline: 2px solid blue;
+
+  @media (min-width: $tablet-width) {
+    outline: 2px solid blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 300%;
+    outline: 2px solid blue;
+  }
+}
+
+.reviews__item {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid blue;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid blue;
+  }
+}
+
+.reviews__radio {
+  display: none;
+
+  &--first:checked ~ .reviews__toggles label[for="btn-1"],
+  &--second:checked ~ .reviews__toggles label[for="btn-2"],
+  &--third:checked ~ .reviews__toggles label[for="btn-3"] {
+    border: 3px solid $color-main;
+    background-color: $color-secondary;
+  }
+
+  &--first:hover:not(:checked) ~ .reviews__toggles label[for="btn-1"],
+  &--second:hover:not(:checked) ~ .reviews__toggles label[for="btn-2"],
+  &--third:hover:not(:checked) ~ .reviews__toggles label[for="btn-3"] {
+    background-color: transparentize($color-main, 0.4);
+  }
+
+  &--first:active:not(:checked) ~ .reviews__toggles label[for="btn-1"],
+  &--second:active:not(:checked) ~ .reviews__toggles label[for="btn-2"],
+  &--third:active:not(:checked) ~ .reviews__toggles label[for="btn-3"] {
+    background-color: transparentize($color-main, 0.9);
+  }
+
+
+  &--first:checked ~ .reviews__wrapper-inner .reviews__list {
+    transform: translate(0);
+    transition: 0.5s;
+  }
+
+  &--second:checked ~ .reviews__wrapper-inner .reviews__list {
+    transform: translate(-280px);
+    transition: 0.5s;
+
+    @media (min-width: $tablet-width) {
+      transform: translate(-620px);
+    }
+  }
+
+  &--third:checked ~ .reviews__wrapper-inner .reviews__list {
+    transform: translate(-560px);
+    transition: 0.5s;
+
+    @media (min-width: $tablet-width) {
+      transform: translate(-1240px);
+    }
+  }
+}
+
+.reviews__toggles {
+  padding-left: 14px;
+  outline: 2px solid blue;
+}
+
+.reviews__toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: transparentize($color-third, 0.7);
+  margin-right: 15px;
+}
+
+.reviews__triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 25px;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+  }
+}

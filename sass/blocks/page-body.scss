@@ -1,0 +1,26 @@
+.page-body {
+  min-width: 320px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-main;
+  outline: 5px solid green;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,69 @@
+.research {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    text-align: left;
+    outline: 2px solid blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+    background-color: $color-gray;
+  }
+}
+
+
+.research__wrapper {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 380px;
+    outline: 2px solid red;
+  }
+}
+
+.research__head {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.research__paragraph {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.research__link {
+  @media (min-width: $tablet-width) {
+    color: $color-fourth;
+    text-decoration: underline;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

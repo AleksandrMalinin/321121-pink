@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  width: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
+  color: transparentize($color-main, 0.9);
+  border: 3px solid transparentize($color-main, 0.9);
+  border-radius: 30px;
+  background: transparent;
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+
+  &--pink {
+    margin-bottom: 12px;
+    color: $color-fourth;
+    border: 3px solid $color-fourth;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+}
