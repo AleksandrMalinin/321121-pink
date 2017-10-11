@@ -7,7 +7,6 @@
   width: 140px;
   text-align: left;
   margin-left: auto;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -21,7 +20,6 @@
   background: none;
   border: none;
   text-align: right;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -65,14 +63,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: transparent;
-    outline: 3px solid red;
+    background-color: transparentize($color-third, 0.7);
   }
 
   @media (max-width: $desktop-width) {
+
     &--menu-opened {
       background-color: $color-main;
 
@@ -124,7 +120,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 620px;
-    outline: 3px solid red;
     background: url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat;
   }
 
@@ -156,11 +151,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 10px;
+    width: 150px;
+    padding-left: 0;
     padding-right: 0;
-    background-color: transparentize($color-third, 0.7);
+    background: none;
+    filter: none;
+    outline: 2px solid red;
   }
 
+/*
   &--menu-opened {
     height: 70px;
     background-color: $color-main;
@@ -176,6 +175,7 @@
       background-color: transparent;
     }
   }
+  */
 
   &--menu-closed {
     height: 67px;
@@ -197,7 +197,6 @@
     margin-right: auto;
     order: 1;
     background: none;
-    outline: 6px solid yellow;
   }
 
   @media (min-width: $desktop-width) {
