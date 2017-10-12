@@ -159,23 +159,6 @@
     outline: 2px solid red;
   }
 
-/*
-  &--menu-opened {
-    height: 70px;
-    background-color: $color-main;
-
-    @media (min-width: $tablet-width) {
-      width: 620px;
-      height: 110px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-color: transparent;
-    }
-  }
-  */
   &--menu-closed {
     height: 67px;
     background-color: transparentize($color-third, 0.7);

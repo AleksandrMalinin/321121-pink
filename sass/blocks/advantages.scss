@@ -4,17 +4,21 @@
 }
 
 .advantages__advertising {
+  position: relative;
+  min-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1px;
   background-color: $color-secondary;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     outline: 2px solid blue;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    margin: 0;
+    outline: 2px solid blue;
   }
 }
 
@@ -75,20 +79,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
-  }
-}
-
-.advantages__advertising {
-  position: relative;
-  min-height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1px;
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    margin: 0;
-    outline: 2px solid blue;
   }
 }
 
