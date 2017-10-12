@@ -46,27 +46,6 @@
   }
 }
 
-input[name="surname"],
-input[name="patronymic"] {
-  @media (min-width: $tablet-width) {
-  }
-}
-
-input[name="name"] {
-  @media (min-width: $tablet-width) {
-  }
-}
-
-legend {
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-  /*width: 280px;*/
-}
-
 .form__wrapper {
   width: 280px;
   margin-left: auto;
@@ -184,10 +163,6 @@ textarea {
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   &--none {
     display: none;
 
@@ -197,20 +172,6 @@ textarea {
     }
   }
 }
-
-/*
-.form__contacts-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
-    width: 410px;
-    background-color: blue;
-   }
-}*/
 
 .form__contacts-wrapper {
   @media (min-width: $tablet-width) {
@@ -268,19 +229,14 @@ textarea {
     margin: 0;
   }
 }
-/*
-.form__wrapper-achievement {
-  display: block;
-  min-height: 40px;
-  margin-bottom: 50px;
-  background-color: red;
-}
-*/
 
 .form__achievement-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -308,15 +264,6 @@ textarea {
   line-height: 30px;
   color: $color-fourth;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    &:first-child,
-    &:nth-child(5) {
-    }
-
-    &:nth-child(3) {
-    }
-  }
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -420,9 +367,6 @@ textarea[placeholder] {
     background-color: #1c9b5e;
     color: transparentize($color-secondary, 0.7);
   }
-
-  &:disabled {
-  }
 }
 
 .form__footnote {
@@ -464,7 +408,6 @@ textarea[placeholder] {
     outline: 2px solid green;
   }
 
-
   &::before {
     position: absolute;
     content: "";
@@ -498,7 +441,7 @@ textarea[placeholder] {
     margin-left: 60px;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -526,7 +469,6 @@ textarea[placeholder] {
 .form__checkbox:checked + .form__checkbox-label::before {
   background: url("../img/icon-yes.svg") center center no-repeat;
   background-color: $color-secondary;
-
 }
 
 .form__radio:checked + .form__radio-label::before {

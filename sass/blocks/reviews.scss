@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 940px;
   }
 }
 
@@ -160,6 +160,10 @@
 .reviews__toggles {
   padding-left: 14px;
   outline: 2px solid blue;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__toggle {

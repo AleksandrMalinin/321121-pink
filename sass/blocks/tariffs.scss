@@ -49,7 +49,6 @@
   @media (min-width: $desktop-width) {
     width: 940px;
   }
-
 }
 
 .tariffs__row {
@@ -180,7 +179,6 @@
     @media (min-width: $tablet-width) {
       background-image: url("../img/bg-hit.svg");
     }
-
   }
 }
 
@@ -201,7 +199,6 @@
     }
   }
 
-
   &--additional {
     display: none;
     background-color: $color-secondary;
@@ -215,7 +212,6 @@
 }
 
 .tariffs__features {
-  padding: 0;
   margin: 0;
   padding: 15px 20px;
   text-align: left;
