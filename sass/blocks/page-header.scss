@@ -31,7 +31,7 @@
 }
 
 .page-header__toggle-open {
-    display: none;
+  display: none;
 }
 
 .page-header__image-first {
@@ -62,7 +62,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
     background-color: transparentize($color-third, 0.7);
   }
 
@@ -122,8 +121,8 @@
     display: flex;
     min-height: 620px;
     background:
-    url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") center -110px no-repeat;
+      url("../img/iphone-hand-mobile@1x.png") center bottom no-repeat,
+      url("../img/bg-back-mobile@1x.jpg") center -110px no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -177,7 +176,6 @@
     }
   }
   */
-
   &--menu-closed {
     height: 67px;
     background-color: transparentize($color-third, 0.7);

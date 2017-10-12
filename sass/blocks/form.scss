@@ -441,7 +441,7 @@ textarea[placeholder] {
     margin-left: 60px;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
@@ -469,7 +469,6 @@ textarea[placeholder] {
 .form__checkbox:checked + .form__checkbox-label::before {
   background: url("../img/icon-yes.svg") center center no-repeat;
   background-color: $color-secondary;
-
 }
 
 .form__radio:checked + .form__radio-label::before {
