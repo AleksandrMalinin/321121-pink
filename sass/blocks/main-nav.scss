@@ -51,7 +51,7 @@
   &:active {
     color: transparentize($color-fourth, 0.7);
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       color: transparentize($color-secondary, 0.7);
     }
   }
@@ -61,7 +61,7 @@
   position: relative;
 
   &::before {
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       position: absolute;
       content: "";
       right: 0;
