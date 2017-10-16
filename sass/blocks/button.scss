@@ -9,6 +9,18 @@
   border-radius: 30px;
   background: transparent;
 
+  &:hover {
+    color: transparentize($color-main, 0.7);
+    border: 3px solid transparentize($color-main, 0.7);
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    color: transparentize($color-secondary, 0.7);
+    background-color: transparentize($color-main, 0.7);
+    border-color: transparent;
+  }
+
   @media (min-width: $desktop-width) {
     width: 183px;
   }
@@ -17,6 +29,17 @@
     margin-bottom: 12px;
     color: $color-fourth;
     border: 3px solid $color-fourth;
+
+    &:hover {
+      color: $color-secondary;
+      background-color: $color-fourth;
+      border-color: transparent;
+    }
+
+    &:active {
+      color: transparentize($color-secondary, 0.7);
+      background-color: $color-fourth;
+    }
 
     @media (min-width: $desktop-width) {
       margin: 0;
