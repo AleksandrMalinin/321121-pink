@@ -10,13 +10,13 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 36px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding-top: 98px;
-    padding-bottom: 72px;
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 
   &--invisible {
@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  outline: 2px solid blue;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -49,7 +48,7 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: auto;
     text-align: right;
   }
@@ -60,13 +59,26 @@
   }
 }
 
+.page-footer__logo {
+  &:hover .page-footer__word {
+    fill: $color-fourth;
+  }
+
+  &:active .page-footer__word {
+    fill: transparentize($color-main, 0.7);
+  }
+
+  &:active .page-footer__glass {
+    fill: transparentize($color-fourth, 0.7);
+  }
+ }
+
 .page-footer__social {
   display: flex;
   justify-content: space-between;
   align-self: center;
   width: 180px;
   margin-bottom: 35px;
-  outline: 2px solid blue;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -85,10 +97,10 @@
   width: 140px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid green;
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
+    align-self: center;
     width: 170px;
     margin: 0;
   }
