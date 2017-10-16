@@ -2,55 +2,116 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
     width: 660px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 130px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: left;
     outline: 2px solid blue;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
     width: 100%;
+    padding-top: 35px;
+    padding-bottom: 55px;
     background-color: $color-gray;
   }
 }
 
-
-.research__wrapper {
-  box-sizing: border-box;
-
+.research__watch {
   @media (min-width: $tablet-width) {
-    width: 660px;
-    padding-top: 1px;
+    position: relative;
+    width: 310px;
+    margin-left: auto;
+    outline: 2px solid green;
+    background:
+      url("../img/icon-circle.svg") 20px 57px no-repeat,
+      url("../img/icon-timer2.svg") 0 0 no-repeat;
+    background-size: 202px, 240px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    margin-left: auto;
+    width: 370px;
+    background:
+      url("../img/icon-circle.svg") 23px 70px no-repeat,
+      url("../img/icon-timer2.svg") 0 0 no-repeat;
+    background-size: 253px, 300px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "24";
+      top: 80px;
+      left: 65px;
+      font-size: 96px;
+      font-weight: bold;
+      line-height: 150px;
+      color: $color-fourth;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 97px;
+      left: 80px;
+      font-size: 120px;
+      line-height: 186px;
+    }
+  }
+}
+
+.research__wrapper {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 310px;
     margin-right: auto;
-    padding-left: 380px;
+    padding-top: 1px;
+    padding-bottom: 60px;
+    outline: 2px solid red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-top: 57px;
+    margin-right: auto;
     outline: 2px solid red;
   }
 }
 
 .research__head {
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    padding-right: 140px;
     font-size: 30px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-bottom: 20px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .research__paragraph {
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
