@@ -4,7 +4,6 @@
   padding-top: 30px;
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -16,12 +15,17 @@
     padding-bottom: 85px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 140px;
+      padding-bottom: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 60px;
+      padding-bottom: 103px;
     }
   }
 
   &--concours {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 75px;
@@ -30,11 +34,11 @@
 }
 
 .intro__header {
-  width: 230px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 75px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.2em;

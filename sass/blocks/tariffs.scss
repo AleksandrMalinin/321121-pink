@@ -1,13 +1,21 @@
 .tariffs {
-  background-color: $color-gray;
-  text-transform: uppercase;
   padding-top: 1px;
   padding-bottom: 1px;
-  outline: 4px solid green;
+  text-transform: uppercase;
+  background: url("../img/bg-triangle-white.svg") center top no-repeat;
+  background-size: 100% 25px;
+  background-color: $color-gray;
+
+  @media (min-width: $tablet-width) {
+    background-size: 100% 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100% 80px;
+  }
 }
 
 .tariffs__wrapper {
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
 
@@ -39,15 +47,19 @@
 
 .tariffs__table {
   width: 828px;
-  margin-top: 65px;
+  margin-top: 88px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    margin-top: 85px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-top: 145px;
+    margin-bottom: 90px;
   }
 }
 
@@ -86,7 +98,7 @@
   }
 
   &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(0);
+    transform: translate(40px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
@@ -95,7 +107,7 @@
   }
 
   &--second:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(-276px);
+    transform: translate(-236px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
@@ -104,7 +116,7 @@
   }
 
   &--third:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(-552px);
+    transform: translate(-512px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
@@ -148,7 +160,7 @@
 }
 
 .tariffs__head {
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 20px;
   background-color: $color-main;
 
@@ -170,6 +182,7 @@
   }
 
   &--hit {
+    position: relative;
     background: $color-main url("../img/bg-hit.svg") 0 0 no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -180,22 +193,69 @@
       background-image: url("../img/bg-hit.svg");
     }
   }
+
+  &--hit::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    content: "Хит";
+    font-weight: bold;
+    line-height: 30px;
+    color: $color-secondary;
+    transform: rotate(-45deg);
+  }
 }
 
 .tariffs__data {
   &--check {
+    position: relative;
     background-color: $color-secondary;
 
-    @media (min-width: $tablet-width) {
-      background: $color-secondary url("../img/.svg") 0 0 no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 18px;
+      right: 13px;
+      width: 32px;
+      height: 25px;
+      background: url("../img/icon-yes-table.svg") 0 0 no-repeat;
+      background-size: 32px;
+
+      @media (min-width: $tablet-width) {
+        bottom: 10px;
+        right: 60px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: 15px;
+        right: 100px;
+      }
     }
   }
 
   &--cross {
+    position: relative;
     background-color: $color-secondary;
 
-    @media (min-width: $tablet-width) {
-      background: $color-secondary url("../img/.svg") 0 0 no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 18px;
+      right: 20px;
+      width: 27px;
+      height: 27px;
+      background: url("../img/icon-no-table2.svg") 0 0 no-repeat;
+      background-size: 27px;
+
+      @media (min-width: $tablet-width) {
+        bottom: 10px;
+        right: 60px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: 15px;
+        right: 100px;
+      }
     }
   }
 
@@ -213,7 +273,7 @@
 
 .tariffs__features {
   margin: 0;
-  padding: 15px 20px;
+  padding: 16px 20px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
@@ -240,7 +300,9 @@
 
 
 .tariffs__toggles {
-  margin-bottom: 40px;
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 45px;
   padding-left: 14px;
 
   @media (min-width: $tablet-width) {

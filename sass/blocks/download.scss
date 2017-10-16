@@ -1,6 +1,6 @@
 .download {
   box-sizing: border-box;
-  padding-top: 1px;
+  padding-top: 28px;
   padding-bottom: 1px;
   color: $color-secondary;
   background-color: $color-sixth;
@@ -9,11 +9,15 @@
     width: 310px;
     margin-left: auto;
     margin-right: 0;
+    padding-top: 95px;
+    padding-bottom: 80px;
     background: transparent;
+    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
     width: 370px;
+    padding-top: 108px;
     padding-right: 70px;
   }
 }
@@ -23,20 +27,21 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: 0;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 1.2em;
     font-weight: 300;
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
+    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     font-size: 50px;
-    line-height: 50px;
     font-weight: 300;
-    margin-left: 25px;
+    margin-left: 30px;
     margin-right: 35px;
     outline: 2px solid red;
   }
@@ -47,7 +52,6 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 28px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -59,12 +63,22 @@
 
   @media (min-width: $tablet-width) {
     width: 294px;
-    margin: 0;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 290px;
     font-size: 21px;
+    margin-top: 50px;
+  }
+
+  &:hover {
+    color: $color-fourth;
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    color: transparentize($color-fourth, 0.7);
   }
 }
 
@@ -74,10 +88,16 @@
   margin-right: auto;
   margin-top: 32px;
   margin-bottom: 0;
+  padding-bottom: 1px;
   outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
   }
 }
 
@@ -85,6 +105,13 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .download__link {
@@ -93,13 +120,20 @@
 }
 
 .download__for-devices {
-  margin-top: 25px;
-  margin-bottom: 35px;
+  margin-top: 18px;
+  margin-bottom: 26px;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
+    margin-top: 30px;
     margin-right: 10px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
   }
 }

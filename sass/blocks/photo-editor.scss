@@ -4,19 +4,13 @@
   padding-right: 20px;
   background-color: $color-gray;
 
-  @media (min-width: $tablet-width) {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 940px;
     padding-left: 80px;
     padding-right: 60px;
   }
 }
 
+/*
 .photo-editor__range {
   margin-bottom: 25px;
 
@@ -24,8 +18,11 @@
     display: none;
   }
 }
+*/
 
 .photo-editor__form {
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     display: flex;
@@ -48,7 +45,6 @@
 .photo-editor__image {
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 100%;
   }
 }
 
@@ -59,7 +55,7 @@
   align-items: center;
   width: 280px;
   margin-top: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 35px;
@@ -94,6 +90,7 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
@@ -113,4 +110,81 @@
     width: 410px;
     height: 55px;
   }
+}
+
+.photo-editor__range {
+  /*-webkit-appearance: none;*/
+  width: 240px;
+
+  &--invisible {
+    display: none;
+  }
+}
+
+.photo-editor__range:focus {
+  outline: none;
+}
+
+.photo-editor__range::-webkit-slider-runnable-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: $color-main;
+}
+
+.photo-editor__range::-webkit-slider-thumb {
+  border: 2px solid $color-fourth;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: $color-secondary;
+  cursor: pointer;
+  /*-webkit-appearance: none;*/
+  margin-top: -6px;
+}
+
+.photo-editor__range::-moz-range-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: $color-main;
+}
+
+.photo-editor__range::-moz-range-thumb {
+  border: 2px solid $color-fourth;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: $color-secondary;
+  cursor: pointer;
+}
+
+.photo-editor__range::-ms-track {
+  width: 240px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+.photo-editor__range::-ms-fill-lower {
+  background: $color-main;
+}
+
+.photo-editor__range::-ms-fill-upper {
+  background: $color-main;
+}
+
+.photo-editor__range::-ms-thumb {
+  border: 2px solid $color-fourth;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: $color-secondary;
+  cursor: pointer;
 }
