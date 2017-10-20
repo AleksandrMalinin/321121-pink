@@ -5,11 +5,6 @@
   border: 3px solid transparentize($color-main, 0.9);
   border-radius: 50%;
 
-/*
-  path {
-    fill: $color-fourth;
-  }*/
-
   &:hover {
     border-color: $color-main;
   }
@@ -20,9 +15,6 @@
     .social__icon {
       opacity: 0.3;
     }
-  /*  path {
-      fill: transparentize($color-fourth, 0.7);
-    }*/
   }
 }
 
