@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  padding-bottom: 1px;
+  padding-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 
@@ -26,8 +26,8 @@
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
-    margin-bottom: 75px;
+    margin-top: 95px;
+    margin-bottom: 70px;
     font-size: 18px;
   }
 }
@@ -53,7 +53,6 @@
   margin-right: auto;
   padding-top: 1px;
   padding-bottom: 1px;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 490px;
@@ -65,7 +64,6 @@
     width: 760px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid blue;
   }
 }
 
@@ -76,78 +74,95 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
   border: none;
 
-  &:first-of-type {
-    padding-top: 0;
-  }
-
   @media (min-width: $tablet-width) {
     width: 620px;
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 65px;
+  }
 
-    &:first-of-type {
+  &--names {
+    padding-top: 0;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
       padding: 0;
       order: 0;
       border: none;
-      outline: 2px solid red;
     }
 
-    &:nth-of-type(2) {
-      order: 3;
-    }
-
-    &:nth-of-type(3) {
-      order: 2;
-      border: 2px solid #e5e5e5;
-    }
-
-    &:nth-of-type(4) {
-      order: 1;
-    }
-
-    &:nth-of-type(5) {
-      position: relative;
-      order: 4;
-      border: 2px solid #e5e5e5;
-      border-radius: 3px;
+    @media (min-width: $desktop-width) {
+      width: 435px;
+      margin-left: 0;
+      padding-top: 10px;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    outline: 2px solid violet;
-
-    &:first-of-type {
-      width: 435px;
-      margin-right: 70px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: pink;
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      order: 3;
+      margin-bottom: 75px;
     }
 
-    &:nth-of-type(2) {
+    @media (min-width: $desktop-width) {
       width: 940px;
-      background-color: yellow;
+      margin-bottom: 65px;
+    }
+  }
+
+  &--contacts {
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+      padding-bottom: 0;
+      border: 2px solid $color-dark-gray;
     }
 
-    &:nth-of-type(3) {
+    @media (min-width: $desktop-width) {
       width: 940px;
-      background-color: lightgreen;
+    }
+  }
+
+  &--app {
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      padding-bottom: 20px;
     }
 
-    &:nth-of-type(4) {
+    @media (min-width: $desktop-width) {
       width: 435px;
-      padding-top: 40px;
-      padding-bottom: 25px;
-      padding-left: 72px;
-      background-color: lightblue;
+      position: relative;
+      margin-top: 0;
+      margin-right: 0;
+      padding-top: 55px;
+      padding-bottom: 15px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &--emotion {
+    padding-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      order: 4;
+      margin-bottom: 70px;
+      border: 2px solid #e5e5e5;
+      border-radius: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 40px;
     }
   }
 
@@ -164,18 +179,50 @@
 }
 
 .form__legend {
+  margin: 0;
+  margin-bottom: 40px;
   padding: 0 25px;
+  font-weight: normal;
   line-height: 18px;
   color: $color-fourth;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    margin: 0;
+    margin-top: -47px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-secondary;
+    text-align: center;
+  }
 
   &--none {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: block;
-      text-align: center;
+      width: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      width: 375px;
+    }
+  }
+
+  &--app {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      right: 30px;
+      margin-top: -62px;
     }
   }
 }
@@ -189,6 +236,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 }
 
@@ -208,11 +256,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 50px;
-    outline: 2px solid blue;
-  }
+    margin-bottom: 54px;
 
-  @media (min-width: $desktop-width) {
     &:last-child {
       margin-bottom: 0;
     }
@@ -226,10 +271,31 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     margin: 0;
     margin-bottom: 27px;
     display: flex;
     flex-direction: column-reverse;
+
+    &--number::before {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 60px;
+      content: "";
+      background: $color-dark-gray url("../img/icon-phone.svg") center center no-repeat;
+    }
+
+    &--email::before {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 60px;
+      content: "";
+      background: $color-dark-gray url("../img/icon-mail.svg") center center no-repeat;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -242,7 +308,6 @@
 .form__achievements-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: red;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -254,7 +319,6 @@
 .form__wrapper-inner {
   display: flex;
   flex-direction: column;
-  background-color: pink;
 
   @media (min-width: $desktop-width) {
     &:first-child {
@@ -272,6 +336,7 @@
 }
 
 .form__aria-label {
+  padding-bottom: 10px;
   line-height: 30px;
   color: $color-fourth;
   text-align: center;
@@ -284,7 +349,6 @@
     padding: 0 23px;
     background-color: $color-secondary;
     transform: translateX(-50%);
-    outline: 1px solid blue;
   }
 }
 
@@ -331,10 +395,14 @@
 
   @media (min-width: $tablet-width) {
     width: 500px;
+    min-height: 195px;
+    margin-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
     width: 820px;
+    min-height: 130px;
+    margin: 0;
   }
 
   &:active,
@@ -351,6 +419,8 @@
 
   @media (min-width: $desktop-width) {
     order: -1;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -360,6 +430,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin: 0;
+    padding: 13px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -378,9 +449,10 @@ textarea[placeholder] {
 
 .form__submit {
   width: 280px;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 64px;
+  line-height: 60px;
   color: $color-secondary;
   border: none;
   border-radius: 3px;
@@ -389,7 +461,9 @@ textarea[placeholder] {
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 64px;
+    height: 62px;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   &:hover {
@@ -404,12 +478,23 @@ textarea[placeholder] {
 
 .form__footnote {
   display: block;
+  font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.form__sup {
+.form__sub {
+  vertical-align: super;
+  font-size: 14px;
   color: $color-fourth;
+}
+
+.form__invisible-note {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .form__footer {
@@ -418,25 +503,32 @@ textarea[placeholder] {
     justify-content: space-between;
     align-items: center;
     order: 5;
-    outline: 2px solid blue;
-    min-height: 64px;
+    min-height: 62px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 0;
   }
 }
 
 .form__checkbox-label {
   position: relative;
   margin-left: 70px;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
+
+  &--hotel {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
+
     &:last-child {
       margin-bottom: 10px;
     }
@@ -474,6 +566,11 @@ textarea[placeholder] {
   @media (min-width: $tablet-width) {
     margin-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+
 
   &::before {
     position: absolute;
