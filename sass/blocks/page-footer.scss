@@ -57,19 +57,6 @@
     width: 300px;
     text-align: left;
   }
-
-/*
-  &:hover .page-footer__word {
-    fill: $color-fourth;
-  }
-
-  &:active .page-footer__word {
-    fill: transparentize($color-main, 0.7);
-  }
-
-  &:active .page-footer__glass {
-    fill: transparentize($color-fourth, 0.7);
-  }*/
 }
 
 .page-footer__image {
@@ -81,8 +68,6 @@
     opacity: 0.3;
   }
 }
-
-
 
 .page-footer__social {
   display: flex;

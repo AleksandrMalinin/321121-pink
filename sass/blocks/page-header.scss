@@ -34,15 +34,6 @@
   @media (min-width: $tablet-width) {
     width: 310px;
   }
-
-/*
-  &:hover {
-    fill: $color-fourth;
-  }
-
-  &:active {
-    fill: transparentize($color-secondary, 0.7);
-  }*/
 }
 
 .page-header__button {
@@ -60,15 +51,6 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-
-/*
-  &:hover path {
-    fill: $color-fourth;
-  }
-
-  &:active path {
-    fill: transparentize($color-fourth, 0.7);
-  }*/
 }
 
 .page-header__toggle {
@@ -131,28 +113,6 @@
   }
 
   @media (max-width: $desktop-width) {
-    /*
-    &--menu-opened {
-      background-color: $color-main;
-
-      .page-header__wrapper-inner {
-        display: flex;
-        align-items: center;
-        height: 70px;
-        margin-bottom: 1px;
-        box-shadow: 0 1px 0 0 $color-third;
-      }
-
-      .page-header__toggle--close {
-        margin-left: auto;
-        display: block;
-      }
-
-      .page-header__toggle--open {
-        display: none;
-      }
-    }*/
-
     &--menu-closed {
       display: flex;
       align-items: center;

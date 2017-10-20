@@ -7,6 +7,10 @@
     flex-direction: column;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
   &--large {
     position: relative;
 
@@ -27,10 +31,6 @@
       @media (min-width: $tablet-width) {
         top: 57px;
       }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
     }
   }
 }
