@@ -2,7 +2,7 @@
   height: 35px;
   line-height: 18px;
 
-  path {
+/*  path {
     fill: $color-fourth;
   }
 
@@ -16,6 +16,18 @@
     path {
       fill: transparentize($color-main, 0.7);
     }
+  }*/
+}
+
+.copyright__image {
+  fill: $color-fourth;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill: transparentize($color-main, 0.7);
   }
 }
 

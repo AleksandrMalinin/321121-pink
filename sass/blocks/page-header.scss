@@ -35,16 +35,17 @@
     width: 310px;
   }
 
-  &:hover path {
+/*
+  &:hover {
     fill: $color-fourth;
   }
 
-  &:active path {
+  &:active {
     fill: transparentize($color-secondary, 0.7);
-  }
+  }*/
 }
 
-.page-header__toggle {
+.page-header__button {
   width: 140px;
   margin-right: auto;
   padding-right: 0;
@@ -60,32 +61,56 @@
     display: none;
   }
 
+/*
   &:hover path {
     fill: $color-fourth;
   }
 
   &:active path {
     fill: transparentize($color-fourth, 0.7);
+  }*/
+}
+
+.page-header__toggle {
+  fill: $color-secondary;
+
+  &:hover {
+    fill: $color-fourth;
   }
-}
 
-.page-header__toggle-open {
-  display: none;
-}
+  &:active {
+    fill: transparentize($color-fourth, 0.7);
+  }
 
-.page-header__image-first {
-  @media (min-width: $tablet-width) {
+  &--open {
     display: none;
   }
 }
 
-.page-header__image-second {
-  display: none;
+.page-header__image {
+  fill: $color-secondary;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin-bottom: 15px;
-    outline: 1px solid red;
+  &--first {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--second {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &:hover {
+    fill: $color-fourth;
+  }
+
+  &:active {
+    fill: transparentize($color-secondary, 0.7);
   }
 }
 
@@ -106,6 +131,7 @@
   }
 
   @media (max-width: $desktop-width) {
+    /*
     &--menu-opened {
       background-color: $color-main;
 
@@ -117,15 +143,15 @@
         box-shadow: 0 1px 0 0 $color-third;
       }
 
-      .page-header__toggle-close {
+      .page-header__toggle--close {
         margin-left: auto;
         display: block;
       }
 
-      .page-header__toggle-open {
+      .page-header__toggle--open {
         display: none;
       }
-    }
+    }*/
 
     &--menu-closed {
       display: flex;
@@ -142,12 +168,12 @@
         box-shadow: none;
       }
 
-      .page-header__toggle-open {
+      .page-header__toggle--open {
         margin-left: auto;
         display: block;
       }
 
-      .page-header__toggle-close {
+      .page-header__toggle--close {
         display: none;
       }
     }
@@ -217,7 +243,7 @@
     padding-left: 0;
     padding-right: 0;
     background: none;
-    outline: 2px solid red;
+    box-shadow: none;
   }
 
   &--menu-closed {
