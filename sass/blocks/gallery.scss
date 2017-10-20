@@ -41,14 +41,12 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    outline: 1px solid black;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
     margin-top: 0;
     margin-bottom: 55px;
-    outline: 1px solid black;
   }
 
   &:nth-child(odd) {
@@ -66,7 +64,6 @@
     @media (min-width: $desktop-width) {
       margin-left: 20px;
       margin-right: 20px;
-      outline: 1px solid black;
     }
   }
 
@@ -84,6 +81,7 @@
     width: 620px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,5 +89,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 57px;
+    padding-top: 0;
   }
 }

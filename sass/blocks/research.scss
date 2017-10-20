@@ -10,7 +10,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: left;
-    outline: 2px solid blue;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +25,6 @@
     position: relative;
     width: 310px;
     margin-left: auto;
-    outline: 2px solid green;
     background:
       url("../img/icon-circle.svg") 20px 57px no-repeat,
       url("../img/icon-timer2.svg") 0 0 no-repeat;
@@ -69,14 +67,12 @@
     margin-right: auto;
     padding-top: 1px;
     padding-bottom: 60px;
-    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     padding-top: 57px;
     margin-right: auto;
-    outline: 2px solid red;
   }
 }
 
@@ -121,6 +117,7 @@
   @media (min-width: $tablet-width) {
     color: $color-fourth;
     text-decoration: underline;
+    cursor: pointer;
   }
 
   @media (min-width: $desktop-width) {
