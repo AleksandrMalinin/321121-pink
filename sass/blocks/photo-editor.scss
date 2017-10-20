@@ -78,6 +78,10 @@
 }
 
 .photo-editor__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     text-align: left;
   }
@@ -93,6 +97,8 @@
   }
 
   &--fill {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       margin-top: 42px;
     }
@@ -103,12 +109,34 @@
   }
 
   &--contrast {
+    position: relative;
+
     @media (min-width: $tablet-width) {
+      width: 25px;
       margin-top: 40px;
+      text-align: center;
     }
 
     @media (min-width: $desktop-width) {
+      width: 48px;
       margin-top: 20px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 47px;
+      left: 0;
+      width: 275px;
+      height: 1px;
+      background-color: transparentize($color-third, 0.9);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 55px;
+      width: 410px;
     }
   }
 }
@@ -264,6 +292,10 @@
   cursor: pointer;
   appearance: none;
   margin-top: -6px;
+
+  &:active {
+    background-color: $color-fourth;
+  }
 }
 
 .photo-editor__range::-moz-range-track {
