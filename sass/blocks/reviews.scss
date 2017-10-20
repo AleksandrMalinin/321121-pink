@@ -75,7 +75,7 @@
       left: 50%;
       width: 80px;
       height: 65px;
-      background: url("../img/icon-quotes2.svg") center 0 no-repeat;
+      background: url("../img/quotes2.svg") center 0 no-repeat;
       transform: translate(-50%);
     }
   }
@@ -276,10 +276,18 @@
 
   &:hover:not(&--checked) {
     background-color: transparentize($color-main, 0.4);
+
+    @media (min-width: $desktop-width) {
+      background: none;
+    }
   }
 
   &:active(&--checked) {
     background-color: transparentize($color-main, 0.9);
+
+    @media (min-width: $desktop-width) {
+      background: none;
+    }
   }
 }
 

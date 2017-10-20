@@ -60,6 +60,21 @@
 }
 
 .page-footer__image {
+
+  &--first {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--second {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
   &:hover:not(:active) {
     fill: $color-fourth;
   }

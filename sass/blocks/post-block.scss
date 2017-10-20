@@ -7,10 +7,6 @@
     flex-direction: column;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
-
   &--large {
     position: relative;
 

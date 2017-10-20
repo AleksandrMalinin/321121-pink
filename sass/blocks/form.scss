@@ -284,7 +284,7 @@
       width: 60px;
       height: 60px;
       content: "";
-      background: $color-dark-gray url("../img/icon-phone.svg") center center no-repeat;
+      background: $color-dark-gray url("../img/phone.svg") center center no-repeat;
     }
 
     &--email::before {
@@ -294,7 +294,7 @@
       width: 60px;
       height: 60px;
       content: "";
-      background: $color-dark-gray url("../img/icon-mail.svg") center center no-repeat;
+      background: $color-dark-gray url("../img/mail.svg") center center no-repeat;
     }
   }
 
