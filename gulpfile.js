@@ -19,10 +19,10 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task('webp', function () {
-    return gulp.src('img/**/*.{png,jpg}')
+gulp.task("webp", function () {
+    return gulp.src("img/**/*.{png,jpg}")
         .pipe(webp({quality: 90}))
-        .pipe(gulp.dest('img'));
+        .pipe(gulp.dest("img"));
 });
 
 gulp.task("serve", ["style"], function() {
