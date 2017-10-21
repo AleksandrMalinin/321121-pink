@@ -102,7 +102,7 @@
   }
 
   &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(0px);
+    transform: translate(0);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
