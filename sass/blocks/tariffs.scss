@@ -29,6 +29,7 @@
 }
 
 .tariffs__wrapper-inner {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   width: 320px;
@@ -101,7 +102,7 @@
   }
 
   &--first:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(10px);
+    transform: translate(0px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
@@ -110,7 +111,7 @@
   }
 
   &--second:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(-263px);
+    transform: translate(-273px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
@@ -119,7 +120,7 @@
   }
 
   &--third:checked ~ .tariffs__wrapper-inner .tariffs__table {
-    transform: translate(-540px);
+    transform: translate(-548px);
     transition: 0.5s;
 
     @media (min-width: $tablet-width) {
