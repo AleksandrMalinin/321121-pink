@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding-top: 100px;
+    padding-top: 55px;
     padding-bottom: 70px;
   }
 
@@ -57,17 +57,29 @@
     width: 300px;
     text-align: left;
   }
+}
 
-  &:hover .page-footer__word {
+.page-footer__image {
+  &--first {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--second {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &:hover:not(:active) {
     fill: $color-fourth;
   }
 
-  &:active .page-footer__word {
-    fill: transparentize($color-main, 0.7);
-  }
-
-  &:active .page-footer__glass {
-    fill: transparentize($color-fourth, 0.7);
+  &:active {
+    opacity: 0.3;
   }
 }
 

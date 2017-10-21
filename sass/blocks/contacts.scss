@@ -63,7 +63,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  outline: 2px solid blue;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -85,7 +84,6 @@
 
   @media (min-width: $tablet-width) {
     width: 310px;
-    outline: 2px solid green;
 
     &--address {
       width: 100%;

@@ -30,6 +30,12 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 75px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      padding-top: 60px;
+      padding-bottom: 103px;
+    }
   }
 }
 
@@ -45,6 +51,7 @@
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
+    padding: 0 10px;
     font-size: 50px;
   }
 }

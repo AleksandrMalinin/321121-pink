@@ -12,13 +12,12 @@
     padding-top: 95px;
     padding-bottom: 80px;
     background: transparent;
-    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
     width: 370px;
     padding-top: 108px;
-    padding-right: 70px;
+    padding-right: 30px;
   }
 }
 
@@ -34,7 +33,6 @@
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
-    outline: 2px solid red;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +41,6 @@
     font-weight: 300;
     margin-left: 30px;
     margin-right: 35px;
-    outline: 2px solid red;
   }
 }
 
@@ -59,7 +56,6 @@
   color: $color-secondary;
   border: 3px solid $color-secondary;
   border-radius: 30px;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 294px;
@@ -89,7 +85,6 @@
   margin-top: 32px;
   margin-bottom: 0;
   padding-bottom: 1px;
-  outline: 2px solid red;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -116,7 +111,6 @@
 
 .download__link {
   color: $color-secondary;
-  outline: 2px solid red;
 }
 
 .download__for-devices {
