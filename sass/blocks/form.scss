@@ -599,11 +599,11 @@ textarea[placeholder] {
 
 .form__checkbox:checked + .form__checkbox-label::before,
 .form__checkbox:active + .form__checkbox-label::before {
-  background: url("../img/icon-yes.svg") center center no-repeat;
+  background: url("../img/yes.svg") center center no-repeat;
   background-color: $color-secondary;
 }
 
 .form__radio:checked + .form__radio-label::before,
 .form__radio:active + .form__radio-label::before {
-  background: url("../img/icon-map-marker.svg") center center no-repeat;
+  background: url("../img/map-marker.svg") center center no-repeat;
 }
