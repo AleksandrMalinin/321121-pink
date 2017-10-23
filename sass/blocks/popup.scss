@@ -1,0 +1,124 @@
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  display: none;
+  width: 320px;
+  /*height: 290px;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  border-radius: 2px;
+  background-color: $color-secondary;
+  text-align: center;
+  transform: translateX(-50%);
+  box-shadow: 0 7px 15px 0 transparentize($color-third, 0.75);
+  animation: bounce 0.5s;
+
+  @media (min-width: $tablet-width) {
+    top: 120px;
+    width: 460px;
+    padding-top: 35px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 130px;
+  }
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      width: 780px;
+      padding-top: 40px;
+    }
+  }
+}
+
+.popup__head {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: $color-third;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &--success {
+    width: 240px;
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+    }
+  }
+}
+
+.popup__text {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+
+  &--error {
+    margin-bottom: 40px;
+  }
+
+  &--success {
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 190px;
+      margin-right: 190px;
+    }
+  }
+}
+
+.popup__wrapper {
+  padding-top: 50px;
+  background-color: $color-gray;
+}
+
+.popup__button {
+  margin-bottom: 50px;
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      width: 460px;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+
+  50%  {
+    transform: translateX(-50%) translateY(50px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.popup--opened {
+  display: block;
+}
