@@ -22,7 +22,7 @@
   margin-top: 45px;
   margin-bottom: 30px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
@@ -553,6 +553,7 @@ textarea[placeholder] {
 
 .form__radio-label {
   position: relative;
+  display: block;
   margin-left: 70px;
   margin-bottom: 45px;
 
