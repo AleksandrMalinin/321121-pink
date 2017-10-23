@@ -1,0 +1,25 @@
+.btn {
+  width: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+  color: $color-secondary;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: $color-seventh;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 62px;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: transparentize($color-secondary, 0.7);
+  }
+}
