@@ -13,7 +13,8 @@
       patronymic = document.querySelector("[name=patronymic]"),
       tel = document.querySelector("[name=tel]"),
       email = document.querySelector("[name=email]"),
-      closePopup = document.querySelector(".popup__button");
+      closePopupError = document.querySelector(".popup__button--error"),
+      closePopupSuccess = document.querySelector(".popup__button--success");
 
   menu.classList.add("page-header__wrapper--menu-closed");
 
@@ -38,9 +39,13 @@
     }
   });
 
-  closePopup.addEventListener("click", function (evt) {
+  closePopupError.addEventListener("click", function (evt) {
     evt.preventDefault();
     error.classList.remove("popup--opened");
+  });
+
+  closePopupSuccess.addEventListener("click", function (evt) {
+    evt.preventDefault();
     success.classList.remove("popup--opened");
   });
 })();
