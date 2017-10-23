@@ -43,6 +43,7 @@
   background: none;
   border: none;
   text-align: right;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -55,6 +56,7 @@
 
 .page-header__toggle {
   fill: $color-secondary;
+  display: none;
 
   &:hover {
     fill: $color-fourth;
@@ -64,8 +66,8 @@
     fill: transparentize($color-fourth, 0.7);
   }
 
-  &--open {
-    display: none;
+  &--menu-opened {
+    display: inline-block;
   }
 }
 

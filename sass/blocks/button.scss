@@ -1,6 +1,8 @@
 .button {
   display: block;
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 45px;
@@ -27,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     width: 183px;
+    margin-right: 0;
   }
 
   &--pink {

@@ -14,16 +14,6 @@
   }
 }
 
-/*
-.photo-editor__range {
-  margin-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-*/
-
 .photo-editor__form {
   padding-top: 20px;
 
@@ -202,8 +192,8 @@
   margin-top: 25px;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
   border-top: 1px solid transparentize($color-third, 0.9);
 
   @media (min-width: $tablet-width) {
