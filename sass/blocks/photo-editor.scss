@@ -180,10 +180,12 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: 18px;
+    padding-top: 20px;
     padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     padding-right: 30px;
   }
 }
@@ -223,6 +225,7 @@
   width: 240px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 202px;
@@ -234,7 +237,7 @@
 
   &--crop {
     @media (min-width: $tablet-width) {
-      margin-top: 20px;
+      /*margin-top: 20px;*/
     }
   }
 
