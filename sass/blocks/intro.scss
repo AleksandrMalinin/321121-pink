@@ -5,10 +5,28 @@
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 620px;
     padding-top: 75px;
-    background: none;
+    background: url("../img/bg-back-tablet@1x.jpg") center -110px no-repeat;
+    background-size: 1200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   &--photo {
@@ -40,18 +58,24 @@
 }
 
 .intro__header {
+  width: 280px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 75px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.2em;
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
+    width: 620px;
     font-size: 50px;
+  }
+
+  &--contest {
+    @media (min-width: $desktop-width) {
+      width: 820px;
+    }
   }
 }
