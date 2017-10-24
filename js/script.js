@@ -29,23 +29,29 @@
     menu.classList.add("page-header__wrapper--menu-closed");
   });
 
-  submit.addEventListener("click", function (evt) {
-    if (!name.value || !surname.value || !patronymic.value || !tel.value || !email.value) {
-      evt.preventDefault();
-      error.classList.add("popup--opened");
-    } else {
-      evt.preventDefault();
-      success.classList.add("popup--opened");
-    }
-  });
+  if (document.querySelector(".form__submit")) {
+    submit.addEventListener("click", function (evt) {
+      if (!name.value || !surname.value || !patronymic.value || !tel.value || !email.value) {
+        evt.preventDefault();
+        error.classList.add("popup--opened");
+      } else {
+        evt.preventDefault();
+        success.classList.add("popup--opened");
+      }
+    })
+  };
 
-  closePopupError.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    error.classList.remove("popup--opened");
-  });
+  if (document.querySelector(".popup__button--error")) {
+    closePopupError.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      error.classList.remove("popup--opened");
+    })
+  };
 
-  closePopupSuccess.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    success.classList.remove("popup--opened");
-  });
+  if (document.querySelector(".popup__button--success")) {
+    closePopupSuccess.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      success.classList.remove("popup--opened");
+    })
+  };
 })();
