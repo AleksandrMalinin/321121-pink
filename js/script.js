@@ -2,9 +2,9 @@
 
 (function() {
   var menu = document.querySelector(".page-header__wrapper"),
-      openMenu = document.querySelector(".page-header__toggle--open"),
+      openMenu = document.querySelector(".page-header__button"),
       toggle = document.querySelector(".page-header__toggle--close"),
-      closeMenu = document.querySelector(".page-header__toggle--close"),
+      /*closeMenu = document.querySelector(".page-header__button--close"),*/
       submit = document.querySelector(".form__submit"),
       error = document.querySelector(".popup--error"),
       success = document.querySelector(".popup--success"),
@@ -19,15 +19,14 @@
   menu.classList.add("page-header__wrapper--menu-closed");
 
   openMenu.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    menu.classList.remove("page-header__wrapper--menu-closed");
-    toggle.classList.add("page-header__toggle--menu-opened");
+    toggle.classList.toggle("page-header__toggle--menu-opened");
+    menu.classList.toggle("page-header__wrapper--menu-closed");
   });
 
-  closeMenu.addEventListener("click", function (evt) {
+  /*closeMenu.addEventListener("click", function (evt) {
     evt.preventDefault();
     menu.classList.add("page-header__wrapper--menu-closed");
-  });
+  });*/
 
   if (document.querySelector(".form__submit")) {
     submit.addEventListener("click", function (evt) {
