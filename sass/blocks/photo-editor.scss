@@ -34,8 +34,8 @@
     width: 800px;
   }
 
-  picture {
-    @media (min-width: $desktop-width) {
+  .photo-editor__picture {
+    @media (min-width: $tablet-width) {
       width: 300px;
     }
   }
@@ -318,6 +318,10 @@
   border-radius: 50%;
   background: $color-secondary;
   cursor: pointer;
+
+  &:active {
+    background-color: $color-fourth;
+  }
 }
 
 .photo-editor__range::-ms-track {
@@ -354,4 +358,8 @@
   border-radius: 50%;
   background: $color-secondary;
   cursor: pointer;
+
+  &:active {
+    background-color: $color-fourth;
+  }
 }
