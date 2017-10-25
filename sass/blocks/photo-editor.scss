@@ -231,11 +231,6 @@
     width: 288px;
   }
 
-  &--crop {
-    @media (min-width: $tablet-width) {
-    }
-  }
-
   &--fill {
     display: none;
 
