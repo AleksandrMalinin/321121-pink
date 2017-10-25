@@ -284,7 +284,10 @@
       width: 60px;
       height: 60px;
       content: "";
-      background: $color-dark-gray url("../img/phone.svg") center center no-repeat;
+      background-color: $color-dark-gray;
+      background-image: url("../img/phone.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     &--email::before {
@@ -294,7 +297,10 @@
       width: 60px;
       height: 60px;
       content: "";
-      background: $color-dark-gray url("../img/mail.svg") center center no-repeat;
+      background-color: $color-dark-gray;
+      background-image: url("../img/mail.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -397,6 +403,7 @@
 
 .form__text-aria {
   min-height: 200px;
+  line-height: 30px;
   resize: vertical;
   outline: none;
 
@@ -480,20 +487,9 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .form__submit {
-  /*width: 280px;*/
   margin-bottom: 35px;
-  /*font-size: 18px;
-  font-weight: bold;
-  line-height: 60px;
-  color: $color-secondary;
-  border: none;
-  border-radius: 3px;
-  text-transform: uppercase;
-  background-color: $color-seventh;*/
 
   @media (min-width: $tablet-width) {
-    /*width: 300px;
-    height: 62px;*/
     margin-bottom: 0;
     padding: 0;
   }
@@ -623,13 +619,17 @@ input::-webkit-contacts-auto-fill-button {
 
 .form__checkbox:checked + .form__checkbox-label::before,
 .form__checkbox:active + .form__checkbox-label::before {
-  background: url("../img/yes.svg") center center no-repeat;
+  background-image: url("../img/yes.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-color: $color-secondary;
 }
 
 .form__radio:checked + .form__radio-label::before,
 .form__radio:active + .form__radio-label::before {
-  background: url("../img/map-marker.svg") center center no-repeat;
+  background-image: url("../img/map-marker.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .form__checkbox:focus + .form__checkbox-label::before,

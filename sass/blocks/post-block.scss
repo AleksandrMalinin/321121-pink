@@ -224,6 +224,8 @@
   }
 }
 
-.post-block__like svg {
-  fill: $color-fourth;
+.post-block__like {
+  svg {
+    fill: $color-fourth;
+  }
 }

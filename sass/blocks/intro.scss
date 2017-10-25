@@ -3,7 +3,9 @@
   margin-right: auto;
   padding-top: 30px;
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -70px;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -12,7 +14,9 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 75px;
-    background: url("../img/bg-back-tablet@1x.jpg") center -110px no-repeat;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -110px;
+    background-repeat: no-repeat;
     background-size: 1200px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

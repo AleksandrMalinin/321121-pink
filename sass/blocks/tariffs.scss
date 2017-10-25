@@ -2,7 +2,9 @@
   padding-top: 1px;
   padding-bottom: 1px;
   text-transform: uppercase;
-  background: url("../img/bg-triangle-white.svg") center top no-repeat;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: 100% 25px;
   background-color: $color-gray;
 
@@ -187,7 +189,10 @@
 
   &--hit {
     position: relative;
-    background: $color-main url("../img/bg-hit.svg") 0 0 no-repeat;
+    background-color: $color-main;
+    background-image: url("../img/bg-hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/bg-hit-tablet.svg");
@@ -222,7 +227,9 @@
       right: 13px;
       width: 32px;
       height: 25px;
-      background: url("../img/yes-table.svg") 0 0 no-repeat;
+      background-image: url("../img/yes-table.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
       background-size: 32px;
 
       @media (min-width: $tablet-width) {
@@ -248,7 +255,9 @@
       right: 20px;
       width: 27px;
       height: 27px;
-      background: url("../img/no-table2.svg") 0 0 no-repeat;
+      background-image: url("../img/no-table2.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
       background-size: 27px;
 
       @media (min-width: $tablet-width) {

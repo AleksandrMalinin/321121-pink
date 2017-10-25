@@ -74,7 +74,9 @@
       left: 50%;
       width: 80px;
       height: 65px;
-      background: url("../img/quotes2.svg") center 0 no-repeat;
+      background-image: url("../img/quotes2.svg");
+      background-position: center 0;
+      background-repeat: no-repeat;
       transform: translate(-50%);
     }
   }
@@ -134,76 +136,6 @@
     padding: 0 70px;
   }
 }
-
-/*
-.reviews__radio {
-  display: none;
-
-  &--first:checked ~ .reviews__toggles label[for="btn-1"],
-  &--second:checked ~ .reviews__toggles label[for="btn-2"],
-  &--third:checked ~ .reviews__toggles label[for="btn-3"] {
-    border: 3px solid $color-main;
-    background-color: $color-secondary;
-
-    @media (min-width: $desktop-width) {
-      background: none;
-      border: none;
-    }
-  }
-
-  &--first:hover:not(:checked) ~ .reviews__toggles label[for="btn-1"],
-  &--second:hover:not(:checked) ~ .reviews__toggles label[for="btn-2"],
-  &--third:hover:not(:checked) ~ .reviews__toggles label[for="btn-3"] {
-    background-color: transparentize($color-main, 0.4);
-
-    @media (min-width: $desktop-width) {
-      background: none;
-    }
-  }
-
-  &--first:active:not(:checked) ~ .reviews__toggles label[for="btn-1"],
-  &--second:active:not(:checked) ~ .reviews__toggles label[for="btn-2"],
-  &--third:active:not(:checked) ~ .reviews__toggles label[for="btn-3"] {
-    background-color: transparentize($color-main, 0.9);
-
-    @media (min-width: $desktop-width) {
-      background: none;
-    }
-  }
-
-
-  &--first:checked ~ .reviews__wrapper-inner .reviews__list {
-    transform: translate(0);
-    transition: 0.5s;
-  }
-
-  &--second:checked ~ .reviews__wrapper-inner .reviews__list {
-    transform: translate(-280px);
-    transition: 0.5s;
-
-    @media (min-width: $tablet-width) {
-      transform: translate(-620px);
-    }
-
-    @media (min-width: $desktop-width) {
-      transform: translate(-820px);
-    }
-  }
-
-  &--third:checked ~ .reviews__wrapper-inner .reviews__list {
-    transform: translate(-560px);
-    transition: 0.5s;
-
-    @media (min-width: $tablet-width) {
-      transform: translate(-1240px);
-    }
-
-    @media (min-width: $desktop-width) {
-      transform: none;
-    }
-  }
-}
-*/
 
 .reviews__arrow {
   display: none;

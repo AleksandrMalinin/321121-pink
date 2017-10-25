@@ -1,5 +1,8 @@
 .page-header {
-  background: $color-main url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
+  background-color: $color-main;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -30,11 +33,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  width: 310px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -48,23 +51,12 @@
 
 .page-header__logo {
   display: flex;
-  /*width: 140px;*/
   line-height: 0;
   text-align: left;
-  /*margin-left: auto;*/
-
-  /*@media (min-width: $tablet-width) {
-    width: 310px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 18px;
-  }*/
 }
 
 .page-header__button {
-  /*width: 140px;*/
-  /*margin-right: auto;*/
+
   padding-right: 0;
   padding-top: 5px;
   background: none;
@@ -72,13 +64,6 @@
   text-align: right;
   outline: none;
 
-  /*@media (min-width: $tablet-width) {
-    width: 310px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }*/
   @media (min-width: $desktop-width) {
     padding-top: 10px;
   }
@@ -95,14 +80,6 @@
 .page-header__toggle {
   fill: $color-secondary;
   display: none;
-
-  /*&:hover {
-    fill: $color-fourth;
-  }
-
-  &:active {
-    fill: transparentize($color-fourth, 0.7);
-  }*/
 
   &--menu-opened {
     display: inline-block;
@@ -269,7 +246,9 @@
   min-height: 396px;
   margin-left: auto;
   margin-right: auto;
-  background: url("../img/iphone-hand-mobile@1x.png") bottom left no-repeat;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 310px;
@@ -285,7 +264,9 @@
     margin-left: 0;
     margin-right: auto;
     order: 1;
-    background: url("../img/iphone-hand-desktop@1x.png") -330px bottom no-repeat;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: -330px bottom;
+    background-repeat: no-repeat;
     background-size: 1050px;
     z-index: 5;
 
