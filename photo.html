@@ -18,7 +18,7 @@
     </div>
 
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper"> <!--Добавление класса page-header__wrapper--menu-closed скрывает меню-->
         <div class="page-header__wrapper-inner">
           <div class="page-header__wrapper-head">
             <a class="page-header__logo" href="index.html">
@@ -37,7 +37,7 @@
               <svg class="page-header__toggle page-header__toggle--open" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24">
+              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
                 <use xlink:href="#icon-menu-cross"></use>
               </svg>
             </button>
@@ -64,7 +64,7 @@
         </div>
 
         <article class="post-block post-block--large">
-          <a class="post-block__link">
+          <a class="post-block__link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -93,7 +93,7 @@
 
         <div class="gallery__wrapper">
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -121,7 +121,7 @@
           </article>
 
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -149,7 +149,7 @@
           </article>
 
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -177,7 +177,7 @@
           </article>
 
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -205,7 +205,7 @@
           </article>
 
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -233,7 +233,7 @@
           </article>
 
           <article class="gallery__post post-block">
-            <a class="post-block__link">
+            <a class="post-block__link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -284,6 +284,7 @@
             <ul class="photo-editor__list">
               <li class="photo-editor__item photo-editor__item--crop">
                 <label class="active" for="crop-range">
+                  <span class="visually-hidden">Кадрирование</span>
                   <svg class="photo-editor__icon photo-editor__icon--active" width="48" height="48">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
@@ -291,6 +292,7 @@
               </li>
               <li class="photo-editor__item photo-editor__item--fill">
                 <label for="fill-range">
+                  <span class="visually-hidden">Заливка</span>
                   <svg class="photo-editor__icon" width="48" height="48">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
@@ -298,6 +300,7 @@
               </li>
               <li class="photo-editor__item photo-editor__item--contrast">
                 <label for="contrast-range">
+                  <span class="visually-hidden">Контраст</span>
                   <svg class="photo-editor__icon photo-editor__icon--small" width="32" height="32">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
@@ -323,7 +326,7 @@
       <h3 class="visually-hidden">Ссылки на соцсети и компанию-разработчика</h3>
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <a class="page-footer__link">
+          <a class="page-footer__link" href="index.html">
             <svg class="page-footer__image page-footer__image--first" width="146" height="40">
               <use xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
             </svg>
@@ -355,6 +358,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__made-by">Разработано</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>

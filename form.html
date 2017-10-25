@@ -18,7 +18,7 @@
     </div>
 
     <header class="page-header">
-      <div class="page-header__wrapper page-header__wrapper--menu-closed">
+      <div class="page-header__wrapper"> <!--Добавление класса page-header__wrapper--menu-closed скрывает меню-->
         <div class="page-header__wrapper-inner">
           <div class="page-header__wrapper-head">
             <a class="page-header__logo" href="index.html">
@@ -37,7 +37,7 @@
               <svg class="page-header__toggle page-header__toggle--open" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24">
+              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
                 <use xlink:href="#icon-menu-cross"></use>
               </svg>
             </button>
@@ -139,7 +139,7 @@
     <footer class="page-footer">
       <h3 class="visually-hidden">Ссылки на соцсети и компанию-разработчика</h3>
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
+        <div class="page-footer__logo" href="index.html">
           <a class="page-footer__link">
             <svg class="page-footer__image page-footer__image--first" width="146" height="40">
               <use xlink:href="#icon-logo-pink-blue-mobile"></use>
@@ -172,6 +172,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__made-by">Разработано</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Academy</span>
             <svg class="copyright__image" width="27" height="34">
               <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
