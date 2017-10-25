@@ -9,7 +9,7 @@
   margin-bottom: 0;
 
   font-size: 14px;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +18,7 @@
 }
 
 .gallery__promo {
-  width: 240px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 45px;
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 575px;
     padding-bottom: 85px;
   }
 }

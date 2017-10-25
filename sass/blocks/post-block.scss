@@ -190,7 +190,7 @@
 
 .post-block__comment {
   box-sizing: border-box;
-  width: 241px;
+  width: 240px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1px;
@@ -224,6 +224,8 @@
   }
 }
 
-.post-block__like svg {
-  fill: $color-fourth;
+.post-block__like {
+  svg {
+    fill: $color-fourth;
+  }
 }
