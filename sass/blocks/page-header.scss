@@ -83,6 +83,10 @@
 
   &--menu-opened {
     display: inline-block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -175,7 +179,7 @@
 }
 
 .page-header__wrap {
-  background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
+  background: $color-main url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
   background-size: 700px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -228,7 +232,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 150px;
+    /*width: 150px;*/
+    width: 320px;
+    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     background: none;

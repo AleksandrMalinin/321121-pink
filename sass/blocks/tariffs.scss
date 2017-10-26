@@ -59,13 +59,13 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     margin-top: 85px;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     margin-top: 145px;
-    margin-bottom: 90px;
+    margin-bottom: 95px;
   }
 }
 
@@ -171,11 +171,11 @@
   background-color: $color-main;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 35px;
+    padding: 10px 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 40px;
+    padding: 20px 45px;
   }
 
   &--empty {
@@ -216,6 +216,8 @@
 }
 
 .tariffs__data {
+  padding: 0;
+
   &--check {
     position: relative;
     background-color: $color-secondary;
@@ -286,7 +288,7 @@
 
 .tariffs__features {
   margin: 0;
-  padding: 16px 20px;
+  padding: 17px 20px;
   text-align: left;
 
   @media (min-width: $tablet-width) {

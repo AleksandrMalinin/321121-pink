@@ -10,13 +10,14 @@
     margin-left: auto;
     margin-right: 0;
     padding-top: 95px;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     background: transparent;
   }
 
   @media (min-width: $desktop-width) {
     width: 370px;
     padding-top: 108px;
+    padding-bottom: 95px;
     padding-right: 30px;
   }
 }

@@ -104,12 +104,24 @@
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 24px;
+
+    .research__desktop-br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
+
+    .research__tablet-br {
+      display: none;
+    }
+
+    .research__desktop-br {
+      display: block;
+    }
   }
 }
 
