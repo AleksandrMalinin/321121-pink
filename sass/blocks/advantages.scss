@@ -158,7 +158,7 @@
   &:last-child {
     margin: 0;
 
-    @media (only-min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 7px;
     }
 
