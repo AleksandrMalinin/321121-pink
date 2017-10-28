@@ -3,7 +3,7 @@
 (function() {
   var menu = document.querySelector(".page-header__wrapper"),
       openMenu = document.querySelector(".page-header__button"),
-      /*toggleChange = document.querySelector(".page-header__toggle--close"),*/
+      toggleChange = document.querySelector(".page-header__toggle--close"),
       submit = document.querySelector(".form__submit"),
       error = document.querySelector(".popup--error"),
       success = document.querySelector(".popup--success"),
@@ -19,7 +19,7 @@
 
   openMenu.addEventListener("click", function () {
     menu.classList.toggle("page-header__wrapper--menu-closed");
-    /*toggleChange.classList.toggle("page-header__toggle--menu-opened");*/
+    toggleChange.classList.toggle("page-header__toggle--menu-opened");
   });
 
   if (document.querySelector(".form__submit")) {
