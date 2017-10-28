@@ -27,6 +27,14 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
+  &--cross {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .page-header__wrapper-head {
@@ -56,7 +64,6 @@
 }
 
 .page-header__button {
-
   padding-right: 0;
   padding-top: 5px;
   background: none;
@@ -83,6 +90,10 @@
 
   &--menu-opened {
     display: inline-block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -153,7 +164,8 @@
       }
 
       .page-header__wrapper-inner {
-        height: 67px;
+        /*height: 67px;*/
+        margin-top: -2px;
         background-color: transparent;
         box-shadow: none;
       }
@@ -167,7 +179,7 @@
         display: block;
       }
 
-      .page-header__toggle--close {
+      .page-header__toggle-close {
         display: none;
       }
     }
@@ -175,7 +187,7 @@
 }
 
 .page-header__wrap {
-  background: url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
+  background: $color-main url("../img/bg-back-mobile@1x.jpg") center -70px no-repeat;
   background-size: 700px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -211,7 +223,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 69px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1px;
@@ -228,7 +240,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 150px;
+    /*width: 150px;*/
+    width: 320px;
+    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     background: none;
@@ -236,7 +250,7 @@
   }
 
   &--menu-closed {
-    height: 67px;
+    /*height: 67px;*/
     background-color: transparentize($color-third, 0.7);
   }
 }

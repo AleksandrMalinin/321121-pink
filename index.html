@@ -37,9 +37,11 @@
               <svg class="page-header__toggle page-header__toggle--open" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
-                <use xlink:href="#icon-menu-cross"></use>
-              </svg>
+              <span class="page-header__toggle page-header__toggle--close"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
+                <svg class="page-header__cross" width="24" height="24">
+                  <use xlink:href="#icon-menu-cross"></use>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -116,7 +118,7 @@
         </div>
         <div class="research__wrapper">
           <h3 class="research__head">Эффект <br>на 24 часа!</h3>
-          <p class="research__paragraph">Британские ученые провели исследования <br>и доказали, что положительный эффект <br>от использования приложения длится <br>целые сутки!</p>
+          <p class="research__paragraph">Британские ученые провели исследования <br class="research__tablet-br">и доказали, <br class="research__desktop-br">что положительный эффект <br class="research__tablet-br">от использования приложения <br class="research__desktop-br">длится <br class="research__tablet-br">целые сутки!</p>
           <a class="research__link">Узнать больше об исследовании</a>
         </div>
       </section>
