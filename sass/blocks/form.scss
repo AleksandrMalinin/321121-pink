@@ -669,7 +669,7 @@ input::-webkit-contacts-auto-fill-button {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline-block;
   }
 }
 
