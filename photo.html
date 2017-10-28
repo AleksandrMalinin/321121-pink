@@ -37,9 +37,11 @@
               <svg class="page-header__toggle page-header__toggle--open" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
-                <use xlink:href="#icon-menu-cross"></use>
-              </svg>
+              <span class="page-header__toggle page-header__toggle--close"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
+                <svg class="page-header__cross" width="24" height="24">
+                  <use xlink:href="#icon-menu-cross"></use>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -308,9 +310,15 @@
               </li>
             </ul>
             <div class="photo-editor__range-wrapper">
+              <div class="crop-wrapper">
               <input class="photo-editor__range photo-editor__range--crop" type="range" id="crop-range">
+              </div>
+              <div class="fill-wrapper">
               <input class="photo-editor__range photo-editor__range--fill" type="range" id="fill-rage">
+              </div>
+              <div class="contrast-wrapper">
               <input class="photo-editor__range photo-editor__range--contrast" type="range" id="contrast-range">
+              </div>
             </div>
           </div>
 
@@ -366,7 +374,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js">
-    </script>
+    <!--<script src="js/script.js">
+    </script>-->
   </body>
 </html>

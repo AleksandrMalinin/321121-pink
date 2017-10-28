@@ -35,10 +35,11 @@
   }
 
   &--photo {
-    padding-bottom: 85px;
+    padding-bottom: 84px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 135px;
+      padding-top: 69px;
+      padding-bottom: 140px;
     }
 
     @media (min-width: $desktop-width) {
@@ -48,10 +49,11 @@
   }
 
   &--contest {
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 75px;
+      padding-top: 70px;
+      padding-bottom: 78px;
     }
 
     @media (min-width: $desktop-width) {

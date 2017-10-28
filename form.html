@@ -37,9 +37,11 @@
               <svg class="page-header__toggle page-header__toggle--open" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
-              <svg class="page-header__toggle page-header__toggle--close" width="24" height="24"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
-                <use xlink:href="#icon-menu-cross"></use>
-              </svg>
+              <span class="page-header__toggle page-header__toggle--close"> <!--Добавление класса page-header__toggle--menu-opened меняет крестик на гамбургер-->
+                <svg class="page-header__cross" width="24" height="24">
+                  <use xlink:href="#icon-menu-cross"></use>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -118,7 +120,7 @@
           <fieldset class="form__fieldset form__fieldset--app form__fieldset--gray">
             <h4 class="form__legend form__legend--app">С каким приложением путешествовали?</h4>
             <input class="form__radio visually-hidden" type="radio" name="app" id="ios" checked>
-            <label class="form__radio-label" for="ios">Pink для iOS</label>
+            <label class="form__radio-label" for="ios">Pink <span class="form__for">для</span><span class="form__on">на</span> iOS</label>
             <input class="form__radio visually-hidden" type="radio" name="app" id="android">
             <label class="form__radio-label" for="android">Pink для Android</label>
             <input class="form__radio visually-hidden" type="radio" name="app" id="windows">
@@ -192,7 +194,7 @@
         <button class="popup__button popup__button--success btn" type="button">Закрыть окно</button>
       </div>
     </div>
-    <script src="js/script.js">
-    </script>
+    <!--<script src="js/script.js">
+    </script>-->
   </body>
 </html>

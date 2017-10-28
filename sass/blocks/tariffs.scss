@@ -59,7 +59,7 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     margin-top: 85px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,7 +171,7 @@
   background-color: $color-main;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 32px;
+    padding: 9px 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -188,6 +188,7 @@
   }
 
   &--hit {
+    padding: 9px 27px;
     position: relative;
     background-color: $color-main;
     background-image: url("../img/bg-hit.svg");
@@ -198,9 +199,9 @@
       background-image: url("../img/bg-hit-tablet.svg");
     }
 
-    @media (min-width: $tablet-width) {
+    /*@media (min-width: $tablet-width) {
       background-image: url("../img/bg-hit.svg");
-    }
+    }*/
   }
 
   &--hit::before {
@@ -212,6 +213,11 @@
     line-height: 30px;
     color: $color-secondary;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      left: 8px;
+    }
   }
 }
 
@@ -317,7 +323,7 @@
 .tariffs__toggles {
   font-size: 0;
   line-height: 0;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   padding-left: 14px;
 
   @media (min-width: $tablet-width) {

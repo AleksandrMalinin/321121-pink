@@ -27,6 +27,14 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
+  &--cross {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .page-header__wrapper-head {
@@ -80,16 +88,8 @@
   fill: $color-secondary;
   display: none;
 
-  /*&--menu-opened {
+  &--menu-opened {
     display: inline-block;
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }*/
-
-  &--cross {
-    display: block;
 
     @media (min-width: $desktop-width) {
       display: none;
@@ -179,7 +179,7 @@
         display: block;
       }
 
-      .page-header__toggle--close {
+      .page-header__toggle-close {
         display: none;
       }
     }
@@ -223,7 +223,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 69px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1px;

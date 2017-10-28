@@ -5,6 +5,7 @@
 
 .copyright__image {
   fill: $color-fourth;
+  padding-top: 8px;
 
   &:hover {
     fill: $color-main;
@@ -19,6 +20,10 @@
   font-size: 14px;
   line-height: 18px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
@@ -26,10 +31,11 @@
 
 .copyright__logo {
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 15px;
+    padding-right: 0;
   }
 }
