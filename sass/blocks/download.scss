@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     width: 370px;
     padding-top: 108px;
-    padding-bottom: 95px;
+    padding-bottom: 90px;
     padding-right: 30px;
   }
 }
@@ -48,7 +48,7 @@
 .download__button {
   display: block;
   width: 280px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 18px;
@@ -61,12 +61,14 @@
   @media (min-width: $tablet-width) {
     width: 294px;
     margin-top: 30px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 290px;
     font-size: 21px;
     margin-top: 50px;
+    margin-left: auto;
   }
 
   &:hover {
@@ -107,11 +109,37 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 205px;
+    padding-right: 0;
   }
 }
 
 .download__link {
   color: $color-secondary;
+
+  &--android {
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.download__apple {
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 57px;
+  }
+}
+
+.download__microsoft {
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 49px;
+  }
 }
 
 .download__for-devices {
@@ -121,7 +149,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 30px;
     margin-right: 10px;
     font-size: 18px;
   }

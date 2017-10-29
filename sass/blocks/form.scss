@@ -123,7 +123,7 @@
       width: 940px;
       margin-bottom: 65px;
       padding-top: 46px;
-      padding-bottom: 43px;
+      padding-bottom: 38px;
       padding-right: 55px;
     }
   }
@@ -362,6 +362,8 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
+
     &:first-child {
       width: 260px;
     }
@@ -631,7 +633,7 @@ input::-webkit-contacts-auto-fill-button {
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 70px;
+    margin-left: 73px;
   }
 
   &::before {
@@ -656,20 +658,6 @@ input::-webkit-contacts-auto-fill-button {
 
   &:active::before {
     border-color: $color-fourth;
-  }
-}
-
-.form__for {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.form__on {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
   }
 }
 
