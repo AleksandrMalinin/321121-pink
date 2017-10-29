@@ -14,14 +14,15 @@
   color: $color-main;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    margin-top: 43px;
     font-size: 40px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 60px;
+    margin-top: 62px;
     font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -47,7 +48,7 @@
   line-height: 1;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
 
@@ -85,7 +86,7 @@
   margin-bottom: 25px;
 
   &--address {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) {
@@ -96,6 +97,7 @@
     &--address {
       width: 100%;
       margin-top: 25px;
+      margin-bottom: 32px;
       padding-left: 10px;
     }
 
@@ -107,10 +109,15 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 43px;
+
+    &--phone {
+      padding-right: 0;
+    }
 
     &--email {
       order: 1;
+      padding-left: 0;
     }
 
     &--address {
