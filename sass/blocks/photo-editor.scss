@@ -77,10 +77,6 @@
     text-align: left;
   }
 
-  &--crop {
-    @media (min-width: $tablet-width) {
-    }
-
     @media (min-width: $desktop-width) {
       margin-top: 0;
     }
