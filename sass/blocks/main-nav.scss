@@ -6,6 +6,10 @@
     align-items: center;
     width: 620px;
     margin-right: auto;
+
+    &--menu-opened {
+      box-shadow: 0px 1px 12px 0px rgba(255, 255, 255, 0.2);
+    }
   }
 }
 
